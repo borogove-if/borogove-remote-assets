@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "files": [
+        {
+            "path": "Materials/Audio/musicbox.mp3",
+            "url": "musicbox.mp3",
+            "type": "audio"
+        },
+        {
+            "path": "Materials/Images/serinette.jpg",
+            "url": "serinette.jpg",
+            "type": "image"
+        },
+        {
+            "path": "Materials/Audio/winding.mp3",
+            "url": "winding.mp3",
+            "type": "audio"
+        }
+    ]
+}

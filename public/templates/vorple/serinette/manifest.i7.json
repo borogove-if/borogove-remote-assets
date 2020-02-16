@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "files": [
+        {
+            "path": "musicbox.mp3",
+            "type": "audio"
+        },
+        {
+            "path": "serinette.jpg",
+            "type": "image"
+        },
+        {
+            "path": "winding.mp3",
+            "type": "audio"
+        }
+    ]
+}

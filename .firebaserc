@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "borogove-assets-dev",
+    "production": "borogove-assets"
+  }
+}

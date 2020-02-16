@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "files": [
+        "library/English.h",
+        "library/Grammar.h",
+        "library/infglk.h",
+        "library/infix.h",
+        "library/linklpa.h",
+        "library/linklv.h",
+        "library/Parser.h",
+        "library/parserm.h",
+        "library/VerbLib.h",
+        "library/verblibm.h",
+        "library/readme.txt"
+    ],
+    "includePaths": [ "library" ]
+}

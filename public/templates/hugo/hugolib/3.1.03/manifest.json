@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "files": [
+        "hugolib/hugofix.g",
+        "hugolib/hugofix.h",
+        "hugolib/hugolib.h",
+        "hugolib/objlib.h",
+        "hugolib/resource.h",
+        "hugolib/system.h",
+        "hugolib/verblib.g",
+        "hugolib/verblib.h",
+        "hugolib/verbstub.g",
+        "hugolib/verbstub.h",
+        "hugolib/window.h"
+    ],
+    "includePaths": [ "hugolib" ]
+}

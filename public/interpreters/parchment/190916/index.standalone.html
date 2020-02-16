@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Parchment</title>
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="parchment.min.css">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<style type="text/css">
+		#gameport {
+			width: auto;
+			overflow: visible;
+		}
+	</style>
+</head>
+<body>
+	<script>
+        window.parchment_options = {
+            default_story: `story.z8`,
+            lib_path: './',
+            lock_options: 1,
+            lock_story: 1
+        };
+    </script>
+    <script src="parchment.min.js"></script>
+
+	<div id="parchment"></div>
+</body>
+</html>

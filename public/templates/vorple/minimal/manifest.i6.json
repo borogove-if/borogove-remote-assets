@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "files": [
+        {
+            "path": "Materials/Images/vorple-logo.png",
+            "url": "vorple-logo.png",
+            "type": "image"
+        }
+    ]
+}
