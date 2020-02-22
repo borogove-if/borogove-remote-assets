@@ -21,6 +21,7 @@ Each software in this repository have their individual licenses.
 
 ### Compilers
 
+* [Dialog](https://linusakesson.net/dialog/): BSD (C) Linus Åkesson
 * [Hugo](https://bitbucket.org/0branch/hugo-unix/src/default/): (C) Kent Tessman
 * [Inform 6](https://github.com/DavidKinder/Inform6): [Artistic License 2.0](https://raw.githubusercontent.com/DavidKinder/Inform6/master/licence.txt)
 
@@ -30,10 +31,12 @@ Each software in this repository have their individual licenses.
 * [Parchment](https://github.com/curiousdannii/parchment): [GNU GPL 2.0](https://github.com/curiousdannii/parchment/blob/master/LICENCE)
 * [Quixe](https://eblong.com/zarf/glulx/quixe/): [MIT](https://raw.githubusercontent.com/erkyrath/quixe/master/LICENSE)
 * [Vorple](https://github.com/vorple/vorple): [MIT](https://raw.githubusercontent.com/vorple/vorple/master/LICENSE)
+* [Å-machine](https://linusakesson.net/dialog/aamachine/index.php): BSD (C) Linus Åkesson
 
 ### Templates
 
-* Hugolib (C) Kent Tessman
-* Inform 6 library version 6.11 (C) Graham Nelson
-* Inform 6 library version 6.12.3 (C) Graham Nelson and David Griffith
-* Roodylib (C) Jon Blask
+* Dialog library: BSD (C) Linus Åkesson
+* Hugolib: (C) Kent Tessman
+* Inform 6 library version 6.11: (C) Graham Nelson
+* Inform 6 library version 6.12.3: (C) Graham Nelson and David Griffith
+* Roodylib: (C) Jon Blask
