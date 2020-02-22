@@ -64,6 +64,7 @@
 }
 
 .BufferLine {
+  white-space: pre-wrap;
 }
 
 .GridWindow {
