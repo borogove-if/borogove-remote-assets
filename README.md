@@ -1,18 +1,12 @@
-These are the separate services (interpreters, compilers) that run in the Borogove client as opposed to on the server.
+These are the separate services (interpreters, compilers and templates) that run in the [Borogove client](https://github.com/vorple/borogove-ide) as opposed to on the server.
 
-While developing Borogove, serve these files separately on localhost using the method of your choice and edit Borogove's .env file to point to the server. For example, using Python 2:
-
-```
-python -m SimpleHTTPServer
-```
-
-or Python 3:
+While developing Borogove, serve these files separately on localhost using the method of your choice and edit Borogove's .env file to point to the server. The server must disable CORS or allow access from where Borogove is running. A Python 3 script has been included that does just this:
 
 ```
-python3 -m http.server --bind 127.0.0.1 8000
+python3 server.py
 ```
 
-Both start the server on localhost:8000.
+The server will run on localhost:8000.
 
 
 ## LICENSE
