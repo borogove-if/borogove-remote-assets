@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Vorple</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="interpreter/roboto.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/jquery.powertip.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/toastr.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/vex.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/vex-theme-plain.css">
+
+    <link rel="stylesheet" type="text/css" href="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/haven.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/vorple.css">
+</head>
+<body>
+<main id="haven">
+    <div id="loader">
+        <h2 id="loader-message">Loading scripts</h2>
+        <div id="spinner">V</div>
+    </div>
+</main>
+
+<script src="https://assets.borogove.app/interpreters/util/borogove-utils-1.0.0.js"></script>
+<script src="https://assets.borogove.app/interpreters/vorple/3.2.2/interpreter/vorple.min.js"></script>
+
+<script>
+    borogove.checkCompatibility();
+    
+    vorple.options = {
+        autosave: false,
+        engineColors: false,
+        resource_paths: {
+            images: "Materials/Images/",
+            audio: "Materials/Audio/"
+        }
+    };
+    
+    vorple.debug.off();
+
+    borogove.loader( function( data ) {
+        if( data ) {
+            vorple.haven.setBase64StoryFile( data );
+        }
+        vorple.init();
+    });
+</script>
+</body>
+</html>

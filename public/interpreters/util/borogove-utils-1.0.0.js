@@ -65,6 +65,7 @@ window.borogove = (function() {
 
             if( !event.origin.startsWith( "http://localhost" ) && 
                 !event.origin.startsWith( "https://borogove.app" ) &&
+                !event.origin.startsWith( "https://snippets.borogove.app" ) &&
                 !event.origin.startsWith( "https://assets.borogove.app" ) && 
                 !event.origin.startsWith( "https://borogove-ide-dev.firebaseapp.com" ) &&
                 !event.origin.startsWith( "https://borogove-assets-dev.firebaseapp.com" ) ) { 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Parchment</title>
+	<script src="https://assets.borogove.app/interpreters/parchment/200707/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://assets.borogove.app/interpreters/parchment/200707/parchment.min.css">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<style type="text/css">
+		#gameport {
+			width: auto;
+			overflow: visible;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://assets.borogove.app/interpreters/util/borogove-utils-1.0.0.js"></script>
+	<script>
+		borogove.loader( function( data ) {
+			window.parchment_options = {
+				default_story: `data:text/javascript,processBase64Zcode('${data}'); // .js`,
+				lib_path: './',
+				lock_options: 0,
+				lock_story: 0
+			};
+
+			$.getScript( "https://assets.borogove.app/interpreters/parchment/200707/parchment.min.js" );
+		});
+	</script>
+
+	<div id="parchment"></div>
+</body>
+</html>

@@ -8,6 +8,8 @@ python3 server.py
 
 The server will run on localhost:8000.
 
+The `public` directory contains the "normal" asset files that are deployed to the Firebase cloud service and the `service` directory contains files that are served from Borogove's own server.
+
 
 ## LICENSE
 

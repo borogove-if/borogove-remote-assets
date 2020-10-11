@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HugoJS</title>
+
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <main id="haven">
+        <div id="output">
+            <div id="window0" aria-live="polite" aria-atomic="false" aria-relevant="additions"></div>
+        </div>
+
+        <form id="lineinput">
+            <input name="lineinput" id="lineinput-field" type="text" autocapitalize="none" autocomplete="off">
+        </form>
+
+        <div id="loader">
+            <h2 id="loader-message">Loading scripts</h2>
+            <div id="spinner">H</div>
+        </div>
+    </main>
+
+    <script src="https://assets.borogove.app/interpreters/hugojs/1.0.0/hugo.js"></script>
+    <script src="he.js"></script>
+    <script src="https://assets.borogove.app/interpreters/util/borogove-utils-1.0.0.js"></script>
+    <script>
+		borogove.loader( function( data ) {
+            window.hugojs_options = {
+                // URL to the game file
+                story: `data:application/octet-stream;base64,${data}`,
+
+                // is autosave enabled?
+                autosave: true,
+
+                // the URL where the browser is redirected when the story ends
+                exit_url: "../",
+
+                // disallow supplying options in the URL (except story file)?
+                lock_options: false,
+
+                // disallow supplying the story file in the URL?
+                lock_story: false,
+
+                // allow the user to upload a story file directly if URL isn't supplied?
+                // Always disabled if lock_story is true.
+                allow_upload: false,
+
+                // use a CORS proxy to load game files?
+                // "always" (or true), "never" (or false), or "auto".
+                // The "auto" option uses proxy only if the story URL points to another domain.
+                use_proxy: "never",
+
+                // Setting windowing to false will disable all windows except the main window.
+                // In practice it means that the status line won't be shown.
+                // Useful if the status line is buggy but the game is otherwise playable.
+                windowing: true
+            };
+
+            hugoui.init();
+        });
+</script>
+</body>
+</html>
