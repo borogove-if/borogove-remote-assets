@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Parchment</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <script src="https://assets.borogove.app/interpreters/parchment/2/jquery.min.js"></script>
+	<script src="https://assets.borogove.app/interpreters/parchment/2/ie.js" nomodule></script>
+	<script src="https://assets.borogove.app/interpreters/parchment/2/zvm.js" module></script>
+    <link rel="stylesheet" href="https://assets.borogove.app/interpreters/parchment/2/web.css">
+</head>
+<body>
+	<script src="https://assets.borogove.app/interpreters/util/borogove-utils-1.0.0.js"></script>
+	<script>
+		borogove.loader( function( data ) {
+			const extension = ( window.location.search.indexOf( "vm=quixe" ) > -1 ) ? "ulx" : "z8";
+
+			window.parchment_options = {
+				default_story: [ `data:text/javascript,processBase64Zcode('${data}'); // ${extension} .js` ],
+				lib_path: 'https://assets.borogove.app/interpreters/parchment/2/',
+				lock_options: 0,
+				lock_story: 0
+			};
+
+			$.getScript( "https://assets.borogove.app/interpreters/parchment/2/main.js" );
+		});
+	</script>
+
+	<div id="gameport">
+		<div id="windowport">
+			<noscript>
+				<p>You'll need to turn on Javascript in your web browser to play this game.</p>
+			</noscript>
+		</div>
+		<div id="loadingpane">
+			<img src="https://assets.borogove.app/interpreters/parchment/2/waiting.gif" alt="LOADING"><br>
+			<em>&nbsp;&nbsp;&nbsp;Loading...</em>
+		</div>
+		<div id="errorpane" style="display:none;"><div id="errorcontent">...</div></div>
+	</div>
+</body>
+</html>
