@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "files": [
+        "lib/ext_cheap_scenery.h",
+        "lib/ext_flags.h",
+        "lib/ext_menu.h",
+        "lib/ext_quote_box.h",
+        "lib/ext_waittime.h",
+        "lib/globals.h",
+        "lib/grammar.h",
+        "lib/messages.h",
+        "lib/parser.h",
+        "lib/puny.h",
+        "lib/scope.h",
+        "README.md"
+    ],
+    "includePaths": [ "lib" ]
+}
