@@ -35,8 +35,7 @@
     <script>
         borogove.loader( function( data ) {
             if( data ) {
-                let json = atob( data );
-                json = json.substr( json.indexOf( "{" ) );
+                const json = data.substr( data.indexOf( "{" ) );
                 window.storyContent = JSON.parse( json );
                 
                 const script = document.createElement( "script" );
