@@ -35,4 +35,5 @@ Each software in this repository have their individual licenses.
 * Hugolib: (C) Kent Tessman
 * Inform 6 library version 6.11: (C) Graham Nelson
 * Inform 6 library version 6.12.3: (C) Graham Nelson and David Griffith
+* [PunyInform](https://github.com/johanberntsson/PunyInform): [MIT](https://github.com/johanberntsson/PunyInform/blob/master/LICENSE) (C) Fredrik Ramsberg and Johan Berntsson
 * Roodylib: (C) Jon Blask
