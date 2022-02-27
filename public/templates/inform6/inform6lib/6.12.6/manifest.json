@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "files": [
+        "library/ARTISTIC",
+        "library/caveats.txt",
+        "library/ChangeLog",
+        "library/COPYING",
+        "library/English.h",
+        "library/Grammar.h",
+        "library/infglk.h",
+        "library/infix.h",
+        "library/linklpa.h",
+        "library/Parser.h",
+        "library/README.txt",
+        "library/VerbLib.h",
+        "library/version.h",
+        "library/voices_and_tenses.txt"
+    ],
+    "includePaths": [ "library" ]
+}
