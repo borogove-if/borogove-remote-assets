@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "files": [
+        "vorple/vorple.h",
+        "vorple/vorple-command-prompt-control.h",
+        "vorple/vorple-element-manipulation.h",
+        "vorple/vorple-hyperlinks.h",
+        "vorple/vorple-modal-windows.h",
+        "vorple/vorple-multimedia.h",
+        "vorple/vorple-notifications.h",
+        "vorple/vorple-screen-effects.h",
+        "vorple/vorple-status-line.h",
+        "vorple/vorple-tooltips.h"
+    ],
+    "includePaths": [ "vorple" ]
+}
