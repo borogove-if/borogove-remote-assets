@@ -15,10 +15,9 @@ window.borogove = (function() {
             localStorage.removeItem( "borogove-compat-test" );
         }
         catch( e ) {
-            const url = document.location.origin || document.location.hostname;
             document.body.innerHTML = `
                 <div class="error">
-                <p>
+                <p style="font-weight:bold">
                     Browser settings are preventing the embedded interpreter from working correctly.
                 </p>
                 <p>
@@ -26,7 +25,10 @@ window.borogove = (function() {
                     This setting can be found in Chrome in the settings: open settings
                     and type "third-party" in the search field and uncheck the
                     "Block third-party cookies and site data" checkbox.
-                    You can also set an exception for ${url}.
+                </p>
+                <p>
+                    You might also be viewing the page in Incognito Mode, which may have additional
+                    security restrictions compared to the normal mode.
                 </p>
                 </div>
             `;
